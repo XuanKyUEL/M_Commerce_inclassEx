@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">View_Ex3</string>
+    <string name="add_product">Add Product</string>
+    <string name="enter_product_price">Enter product price</string>
+    <string name="enter_product_name">Enter product name</string>
+    <string-array name="foodList">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Cherry</item>
+        <item>Dragon Fruit</item>
+        <item>Elderberry</item>
+        <item>Fig</item>
+        <item>Grape</item>
+        <item>Honeydew</item>
+        <item>Jackfruit</item>
+        <item>Kiwi</item>
+        <item>Lemon</item>
+        <item>Mango</item>
+        <item>Nectarine</item>
+        <item>Orange</item>
+        <item>Papaya</item>
+        <item>Quince</item>
+        <item>Raspberry</item>
+        <item>Strawberry</item>
+        <item>Tangerine</item>
+        <item>Ugli Fruit</item>
+        <item>Vanilla Bean</item>
+        <item>Watermelon</item>
+        <item>Xigua</item>
+        <item>Yellow Watermelon</item>
+        <item>Zucchini</item>
+    </string-array>
+
+</resources>
