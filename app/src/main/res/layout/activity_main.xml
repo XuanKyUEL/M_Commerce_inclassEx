@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btntoast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4F4BBD"
+        android:text="Toast"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/btndfdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BD4F4B"
+        android:textColor="@color/white"
+        android:text="Default dialog"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/btnctdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4FBD4B"
+        android:text="Custom dialog"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
