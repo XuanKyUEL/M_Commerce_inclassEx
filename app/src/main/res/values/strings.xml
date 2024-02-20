@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Notification_ex</string>
+    <string name="close_app_msg">Do you want to close this app?</string>
 </resources>
