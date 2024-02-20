@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.notification_ex.databinding.ActivityMainBinding;
@@ -50,6 +51,21 @@ public class MainActivity extends AppCompatActivity {
                 // create and show custom dialog
                 Dialog dialog = new Dialog(MainActivity.this);
                 dialog.setContentView(R.layout.custom_dialog);
+                ImageView imvOK = dialog.findViewById(R.id.yes);
+                imvOK.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        finish();
+                    }
+                });
+                ImageView imvCancel = dialog.findViewById(R.id.no);
+                imvCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+                    }
+                });
+                dialog.setCanceledOnTouchOutside(false);
                 dialog.show();
             }
         }
