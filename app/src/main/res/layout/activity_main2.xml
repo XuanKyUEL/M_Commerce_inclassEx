@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback on Android Studio"
+        android:textSize="27sp"/>
+    <RadioGroup
+        android:id="@+id/radGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/radEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excellent"
+            android:textSize="22sp"/>
+        <RadioButton
+            android:id="@+id/radGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:textSize="22sp"/>
+        <RadioButton
+            android:id="@+id/radAv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average"
+            android:textSize="22sp"/>
+        <RadioButton
+            android:id="@+id/radBa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bad"
+            android:textSize="22sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:layout_margin="12sp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback: "
+        android:textSize="26sp"
+        android:background="#F1A96F"
+        android:textColor="@color/black"/>
+</LinearLayout>

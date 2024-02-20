@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">View_Ex2</string>
+    <string name="ketqua">Nền tảng yêu thích của bạn là:</string>
+    <string name="select">Chọn nền tảng bạn muốn xem phim</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImgView_Ex"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/shein_logo"
+        android:id="@+id/imgView"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_change_circle_24"
+            android:id="@+id/btnChange"
+            android:backgroundTint="@color/white"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_all_out_24"
+            android:layout_marginStart="8dp"
+            android:id="@+id/close_button"
+            android:backgroundTint="@color/white"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_disabled_visible_24"
+            android:layout_marginStart="8dp"
+            android:onClick="closeActivity"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

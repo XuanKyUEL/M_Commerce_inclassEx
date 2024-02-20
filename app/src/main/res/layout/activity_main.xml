@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select"
+        android:textSize="22sp"/>
+    <CheckBox
+        android:id="@+id/cbNetflix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Netflix"
+        android:textSize="20sp" />
+    <CheckBox
+        android:id="@+id/cbDisney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disney+"
+        android:textSize="20sp" />
+    <CheckBox
+        android:id="@+id/cbHBO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HBO"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btnVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:textSize="19sp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#D7794E"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ketqua"
+        android:textSize="20sp"
+        android:layout_marginTop="12sp"
+        android:background="#FF0000"
+        android:textColor="#FFFDFD"/>
+
+</LinearLayout>
