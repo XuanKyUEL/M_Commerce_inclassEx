@@ -48,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (v.equals(binding.btnctdialog)) {
                 // create and show custom dialog
-
+                Dialog dialog = new Dialog(MainActivity.this);
+                dialog.setContentView(R.layout.custom_dialog);
+                dialog.show();
             }
         }
     };
@@ -66,5 +68,6 @@ public class MainActivity extends AppCompatActivity {
     private void addEvents() {
         binding.btntoast.setOnClickListener(onClickListener);
         binding.btndfdialog.setOnClickListener(onClickListener);
+        binding.btnctdialog.setOnClickListener(onClickListener);
     }
 }
