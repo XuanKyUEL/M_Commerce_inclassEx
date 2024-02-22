@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    
+    <ImageView
+        android:src="@drawable/hanoi"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:id="@+id/imgproduct"/>
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tvproductname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bia Hà Nội"
+            android:textColor="#C2242D"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvproductprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20.000 VND"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#0F337A"/>
+    </LinearLayout>
+</LinearLayout>
