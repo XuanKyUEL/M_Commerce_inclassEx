@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import mnxk.kotlintex.models.Product;
 import mnxk.kotlintex.view_ex3.databinding.ActivityMain2Binding;
@@ -20,9 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMain2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         initAdapter();
-
         addEvents();
     }
 
@@ -47,6 +46,19 @@ public class MainActivity2 extends AppCompatActivity {
                 Product product = new Product(name, price);
                 adapter.add(product);
             }
+        });
+
+        binding.pdlistView.setOnItemClickListener((parent, view, position, id) -> {
+            Product p = adapter.getItem(position);
+            Toast.makeText(MainActivity2.this,
+                           p.getName() + " - " + p.getPrice() + " VND",
+                           Toast.LENGTH_SHORT).show();
+        });
+
+        binding.pdlistView.setOnItemLongClickListener((parent, view, position, id) -> {
+            adapter.remove(adapter.getItem(position));
+            adapter.notifyDataSetChanged();
+            return true;
         });
     }
 }
