@@ -3,6 +3,7 @@ package mnxk.kotlintex.view_ex3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -26,6 +27,7 @@ public class MainActivity3
         setContentView(binding.getRoot());
         initData();
         loadData();
+        addEvents();
     }
 
     private void initData() {
@@ -47,5 +49,23 @@ public class MainActivity3
                 beers
         );
         binding.listViewBeers.setAdapter(adapter);
+    }
+
+    private void addEvents() {
+        binding.listViewBeers.setOnItemClickListener((parent, view, position, id) -> {
+            Toast.makeText(
+                    MainActivity3.this,
+                    beers.get(position).getBeerName() + " - " + Math.round(beers.get(position).getBeerPrice()) + " VND",
+                    Toast.LENGTH_SHORT).show();
+        });
+        binding.listViewBeers.setOnItemLongClickListener((parent, view, position, id) -> {
+            adapter.remove(adapter.getItem(position));
+            adapter.notifyDataSetChanged();
+            Toast.makeText(
+                    MainActivity3.this,
+                    "Cleared " + beers.get(position).getBeerName(),
+                    Toast.LENGTH_SHORT).show();
+            return true;
+        });
     }
 }

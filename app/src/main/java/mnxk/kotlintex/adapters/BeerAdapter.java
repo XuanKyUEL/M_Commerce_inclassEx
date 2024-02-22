@@ -71,8 +71,12 @@ public class BeerAdapter extends BaseAdapter {
         Beers beers = list.get(position);
         holder.imgproduct.setImageResource(beers.getBeerThumb());
         holder.tvproductname.setText(beers.getBeerName());
-        holder.tvprodcutprice.setText(beers.getBeerPrice() + " VND");
+        holder.tvprodcutprice.setText(Math.round(beers.getBeerPrice()) + " VND");
         return convertView;
+    }
+
+    public void remove(Object item) {
+        list.remove(item);
     }
 
     // Create a view holder
